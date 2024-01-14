@@ -3,6 +3,8 @@ https://www.youtube.com/watch?v=jc_uzRWSrvw&ab_channel=TommyNgo
 
 1. Compile the cpp program, make sure to include the "-g" flag to include debug information so we can debug later with gdb:
 $ g++ -g test.cpp -o test
+Btw here is example way of compiling C code, we would use gcc instead of g++ since it is C and not C++:
+$ gcc -O2 -o gaussO2 gauss.c
 
 2. Then open the debugger using:
 $ gdb test
