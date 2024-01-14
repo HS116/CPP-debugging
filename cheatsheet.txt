@@ -1,0 +1,50 @@
+GREAT GDB Debugger Tutorial Video:
+https://www.youtube.com/watch?v=jc_uzRWSrvw&ab_channel=TommyNgo
+
+1. Compile the cpp program, make sure to include the "-g" flag to include debug information so we can debug later with gdb:
+$ g++ -g test.cpp -o test
+
+2. Then open the debugger using:
+$ gdb test
+
+3. Start program execution using:
+$ run
+
+4. Add a breakpoint for a particular line number using:
+$ break <your_program.cpp>:<line_number>
+
+5. Add a breakpoint for a certain function using:
+$ break <your_program.cpp>:<function_name>
+
+6. To get info about all the breakpoints:
+$ info breakpoint
+
+7. To enable a breakpoint
+$ enable <breakpoint_number>
+
+8. To disable a breakpoint
+$ disable <breakpoint_number>
+
+9. To disable all breakpoints:
+Use "$ disable" (with no arguments) to disable all breakpoints, followed by "enable N", where N is the breakpoint you want to keep.
+
+10. To print the value of a variable:
+$ print <variable_name>
+
+11. To print a vector:
+$ print *(<vector_name>._M_impl._M_start)@3
+
+12. To get the value of all registers:
+$ info registers
+
+13. To step into next line of code:
+$ step
+
+14. To step over to next line of code i.e. skip function call :
+$ next
+
+15. To continue program execution:
+$ continue
+
+16. Exit debugger using:
+$ exit
